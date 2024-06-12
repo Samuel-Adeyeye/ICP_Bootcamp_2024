@@ -1,15 +1,21 @@
 {
   "canisters": {
-    "token_transfer_backend": {
-      "main": "src/token_transfer_backend/main.mo",
-      "type": "motoko"
-    }
+      "token_transfer_backend": {
+          "main": "src/token_transfer_backend/main.mo",
+          "type": "motoko",
+          "dependencies": ["icrc1_ledger_canister"]
+      },
+      "icrc1_ledger_canister": {
+          "type": "custom",
+          "candid": "https://raw.githubusercontent.com/dfinity/ic/d19fa446ab35780b2c6d8b82ea32d808cca558d5/rs/rosetta-api/icrc1/ledger/ledger.did",
+          "wasm": "https://download.dfinity.systems/ic/d19fa446ab35780b2c6d8b82ea32d808cca558d5/canisters/ic-icrc1-ledger.wasm.gz"
+      }
   },
   "defaults": {
-    "build": {
-      "args": "",
-      "packtool": ""
-    }
+      "build": {
+          "args": "",
+          "packtool": ""
+      }
   },
   "output_env_file": ".env",
   "version": 1

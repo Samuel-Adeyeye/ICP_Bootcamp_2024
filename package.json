@@ -1,0 +1,12 @@
+{
+  "name": "icp_token_transfer",
+  "version": "1.0.0",
+  "description": "Token transfer is a canister that can transfer ICRC-1 tokens from its account to other accounts.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel Adeyeye",
+  "license": "ISC"
+}

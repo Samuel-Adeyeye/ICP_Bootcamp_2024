@@ -1,0 +1,8 @@
+{
+  "icrc1_ledger_canister": {
+    "ic": "7cu3t-eyaaa-aaaak-qimeq-cai"
+  },
+  "token_transfer_backend": {
+    "ic": "7lxqp-sqaaa-aaaak-qimfa-cai"
+  }
+}
